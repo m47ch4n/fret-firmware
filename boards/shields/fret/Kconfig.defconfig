@@ -1,0 +1,31 @@
+if SHIELD_FRET_DONGLE
+
+config ZMK_KEYBOARD_NAME
+    default "Fret@HIHAHEHO"
+
+config USB_DEVICE_MANUFACTURER
+    default "HIHAHEHO Studio"
+
+config USB_DEVICE_VID
+    default 0x4853
+
+config USB_DEVICE_PID
+    default 0x4B00
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+config ZMK_USB
+	default y
+
+endif
+
+if SHIELD_FRET_DONGLE || SHIELD_FRET_LEFT || SHIELD_FRET_RIGHT
+
+config ZMK_SPLIT
+    default y
+
+config ZMK_BLE
+	default y
+
+endif

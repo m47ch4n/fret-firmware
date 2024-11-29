@@ -1,0 +1,12 @@
+file_format: "1"
+id: fret
+name: Fret
+type: shield
+url: https://github.com/m47ch4n/fret/
+requires: [seeeduino_xiao_ble]
+features:
+  - keys
+siblings:
+  - fret_left
+  - fret_right
+  - fret_dongle
